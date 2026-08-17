@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0f19;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+
+    background: #0b0f19;
+}
+
+nav h2 {
+    font-size: 28px;
+}
+
+span {
+    color: #00e5ff;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00e5ff;
+}
+
+
+/* Home */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 10%;
+}
+
+.hello {
+    color: #00e5ff;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.home h3 {
+    font-size: 25px;
+    color: #aaa;
+}
+
+.intro {
+    max-width: 550px;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #00e5ff;
+    color: #000;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background: white;
+    color: black;
+}
+
+
+/* Sections */
+
+section {
+    padding: 80px 10%;
+    min-height: 60vh;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+section p {
+    max-width: 700px;
+    line-height: 1.7;
+    color: #bbb;
+}
+
+
+/* Skills */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills div {
+    padding: 15px 25px;
+
+    border: 1px solid #00e5ff;
+    border-radius: 10px;
+
+    color: #00e5ff;
+}
+
+.skills div:hover {
+    background: #00e5ff;
+    color: black;
+}
+
+
+/* Project */
+
+.project {
+    max-width: 600px;
+
+    padding: 30px;
+
+    border: 1px solid #333;
+    border-radius: 15px;
+
+    background: #111827;
+}
+
+.project h3 {
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #00e5ff;
+}
+
+
+/* Contact */
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.social a {
+    color: #00e5ff;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .home {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    section {
+        padding: 60px 30px;
+    }
+}
